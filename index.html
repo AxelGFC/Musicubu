@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Proyecto Musicubu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="musicubu.js" async defer></script>
+    </head>
+    <body>
+        <h1>Musicubu</h1>
+        <h3>Pagina Principal</h3>
+
+        <label for="BPM">BPM</label>
+        <input type="number" id="BPM" name="BPM" value="100">
+        <label for="compas">Compas</label>
+        <select id="compas" name="compas">
+            <option value="4">4/4</option>
+        </select>
+        <label for="estilo">Estilo</label>
+        <select id="estilo" name="estilo">
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+            <option value="triangle">Triangle</option>
+        </select>
+        <button onclick="AplicarConfiguracion()">Aplicar</button>
+        <button onclick="Nota()">Nota</button>
+        <button onclick="ActivarOctava()">Octava de Do</button>
+    </body>
+</html>
