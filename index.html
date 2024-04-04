@@ -11,22 +11,45 @@
     </head>
     <body>
         <h1>Musicubu</h1>
-        <h3>Pagina Principal</h3>
+        <h3>Página Principal</h3>
 
         <label for="BPM">BPM</label>
-        <input type="number" id="BPM" name="BPM" value="100">
-        <label for="compas">Compas</label>
-        <select id="compas" name="compas">
-            <option value="4">4/4</option>
+        <input type="number" id="BPM" name="BPM" value="120">
+        
+        <label for="nota">Escala</label>
+        <select id="nota" name="nota">
+            <option value="0">Do</option>
+            <option value="1">Do#</option>
+            <option value="2">Re</option>
+            <option value="3">Re#</option>
+            <option value="4">mi</option>
+            <option value="5">Fa</option>
+            <option value="6">Fa#</option>
+            <option value="7">Sol</option>
+            <option value="8">Sol#</option>
+            <option value="9">La</option>
+            <option value="10">La#</option>
+            <option value="11">Si</option>
         </select>
+        <select id="tipoEscala" name="tipoEscala">
+            <option value="true">Mayor</option>
+            <option value="false">Menor</option>
+        </select>
+
         <label for="estilo">Estilo</label>
         <select id="estilo" name="estilo">
-            <option value="square">Square</option>
-            <option value="sawtooth">Sawtooth</option>
-            <option value="triangle">Triangle</option>
+            <option value="square">Normal</option>
+            <option value="sawtooth">Duro</option>
+            <option value="triangle">Suave</option>
         </select>
-        <button onclick="AplicarConfiguracion()">Aplicar</button>
-        <button onclick="Nota()">Nota</button>
-        <button onclick="ActivarOctava()">Octava de Do</button>
+        <label for="percusion">Percusión</label>
+        <select id="percusion" name ="percusion">
+            <option value="0">Normal</option>
+            <option value="1">Suave</option>
+            <option value="2">Fuerte</option>
+            <option value="3">Desactivado</option>
+        </select>
+
+        <button onclick="ReproducirCancion()">Canción Aleatoria</button>
     </body>
 </html>
